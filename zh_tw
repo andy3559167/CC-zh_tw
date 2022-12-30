@@ -2249,7 +2249,7 @@
       "crafting": {
         "gui_name": "<dark_red><b>創建配方 </b></dark_red><grey>[<dark_grey>工作台]</dark_grey></grey>",
         "gui_help": [
-          "<gold><b>在结果/成分槽上&eShift&7+&e右鍵</green>",
+          "<gold><b>在結果/成分槽上Shift+右鍵</b></gold><grey>:</grey>",
           " <grey>\u27A0</grey> <yellow> 打開结果/配料編輯器</yellow>",
           ""
         ]
