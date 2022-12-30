@@ -682,36 +682,36 @@
         "gui_name": "<black><b>Item List</b></black>",
         "items": {
           "next_page": {
-            "name": "<gold>Next Page</gold>"
+            "name": "<gold>下一頁</gold>"
           },
           "previous_page": {
-            "name": "<gold>Previous Page</gold>"
+            "name": "<gold>上一頁</gold>"
           },
           "custom_item": {
             "lore": [
               "",
-              "<grey>[<green右鍵</green>]</grey><yellow> Edit Item using the ItemCreator</yellow>",
-              "<grey>[<red>Shift Right-Click</red>]</grey><red> Delete Item</red>",
-              "<grey>[<green>左鍵</green>]</grey><yellow> Give a single Item</yellow>",
-              "<grey>[<green>Shift Left-Click</green>]</grey><yellow> Give Full Stack of Item</yellow>"
+              "<grey>[<green>右鍵</green>]</grey><yellow> 使用 ItemCreator 編輯項目</yellow>",
+              "<grey>[<red>Shift+右鍵</red>]</grey><red> 刪除物品</red>",
+              "<grey>[<green>左鍵</green>]</grey><yellow> 給予物品</yellow>",
+              "<grey>[<green>Shift+左鍵</green>]</grey><yellow> 給予物品最大堆疊量</yellow>"
             ]
           },
           "custom_item_error": {
-            "name": "<red>Error Loading Item!</red>"
+            "name": "<red>物品載入失敗!</red>"
           },
           "namespace": {
             "name": "<grey>%namespace%</grey>",
             "lore": [
               "",
-              "<grey>[<green>點擊</green>] View Items of this namespace</grey>"
+              "<grey>[<green>點擊</green>] 查看此命名空間的項目</grey>"
             ]
           }
         },
         "messages": {
           "delete": {
-            "confirm": "<yellow>Do you really want to delete <gold>%item%?</gold></yellow>",
-            "confirmed": "<grey>[<green>YES</green>]</grey>  ",
-            "declined": "<grey>[<red>NO</red>]</grey>"
+            "confirm": "<yellow>你確認要刪除該 <gold>%item%?</gold></yellow>",
+            "confirmed": "<grey>[<green>確認</green>]</grey>  ",
+            "declined": "<grey>[<red>取消</red>]</grey>"
           }
         }
       }
@@ -720,153 +720,150 @@
       "main_menu": {
         "gui_name": "<black><b>Item Creator</b></black>",
         "gui_help": [
-          "<grey>Place in the item you want to edit in top middle</grey>",
-          "<yellow>Some features are only available if you save the item!</yellow>"
+          "<grey>將要編輯的物品放在頂部中間</grey>",
+          "<yellow>某些功能僅在您保存項目時可用!</yellow>"
         ],
         "messages": {
           "save": {
             "input": {
-              "line1": "<white>Type in the <hover:show_text:'Custom Items are saved as follows: <yellow>/data/<folder>/items/<item_name>.conf</yellow><br><br>The folder can be used to group your items and nested folders are allowed!<br>Input your folder and name like this: <yellow>/wui <folder> <name></yellow><br><br><red>Make sure the folder and name only contain: <br> - lowercase letters,<br> - numbers,<br> - underscores,<br> - or dashes!<br>Use <yellow>/wui </yellow>to get input assistance, like tab completions!</red>'><yellow>folder and item name</yellow></hover>, under which to save the item"
+              "line1": "<white>輸入 <hover:show_text:'自定義項保存如下: <yellow>/data/<folder>/items/<item_name>.conf</yellow><br><br>該文件夾可用於對您的項目進行分組,並且允許嵌套文件夾!<br>像這樣輸入您的文件夾和名稱: <yellow>/wui <folder> <name></yellow><br><br><red>確保文件夾和名稱只包含: <br> - 小寫字母,<br> - 數字,<br> - _,<br> - 或 -!<br>使用 <yellow>/wui </yellow>獲得輸入幫助,例如製表符完成!</red>'><yellow>文件夾和項目名稱</yellow></hover>, 在其下保存項目"
             },
-            "success": "<green>Config saved to:</green>"
+            "success": "<green>配置保存到:</green>"
           },
           "enchant": {
-            "invalid_lvl": "<red>Invalid level! It's not a number!</red>",
-            "invalid_enchant": "<red>Invalid Enchantment! <dark_red>%ENCHANT%</dark_red> does not exist!</red>",
-            "no_lvl": "<red>No level set!</red>"
+            "invalid_lvl": "<red>無效的等級! 它不是一個數字!</red>",
+            "invalid_enchant": "<red>無效的附魔! <dark_red>%ENCHANT%</dark_red> 不存在!</red>",
+            "no_lvl": "<red>沒有設定等級!</red>"
           },
           "potion": {
-            "error_number": "<red>Error parsing Numbers! <dark_red><name> <duration> <level> [<ambient> <particles>]</dark_red></red>",
-            "wrong_args": "<red>Wrong arguments or invalid name! <dark_red><name> <duration> <level> [<ambient> <particles>]</dark_red></red>",
-            "success": "<green>Added Potion Effect </green><gold>%TYPE%,%DUR%,%AMP%,%AMB%,%PAR%</gold>",
-            "invalid_name": "<red>Invalid name! <dark_red>%NAME%</dark_red> does not exist!</red>"
+            "error_number": "<red>解析數字時出錯! <dark_red><name> <duration> <level> [<ambient> <particles>]</dark_red></red>",
+            "wrong_args": "<red>參數錯誤或名稱無效! <dark_red><name> <duration> <level> [<ambient> <particles>]</dark_red></red>",
+            "success": "<green>添加藥水效果 </green><gold>%TYPE%,%DUR%,%AMP%,%AMB%,%PAR%</gold>",
+            "invalid_name": "<red>名稱無效! <dark_red>%NAME%</dark_red> does not exist!</red>"
           },
           "attribute": {
             "amount": {
-              "error": "<red>Error parsing number! Is it a number? It should be!</red>"
+              "error": "<red>解析號碼時出錯! 它應該是一個數字!</red>"
             },
             "uuid": {
               "error": {
-                "line1": "<red>Invalid UUID: <dark_red>%UUID%</dark_red></red>",
-                "line2": "<red>Type in a valid UUID!</red>"
+                "line1": "<red>無效 UUID: <dark_red>%UUID%</dark_red></red>",
+                "line2": "<red>輸入有效的 UUID!</red>"
               }
             }
           },
           "damage": {
-            "invalid_type": "<red>The current item does not support damage value!</red>",
-            "value_success": "<green>Set item damage to <gold>%VALUE%</gold>!</green>",
-            "invalid_value": "<red>The value <dark_red>%VALUE%</dark_red> is not a number!</red>"
+            "invalid_type": "<red>當前物品不支持傷害值!</red>",
+            "value_success": "<green>將物品損壞設置為 <gold>%VALUE%</gold>!</green>",
+            "invalid_value": "<red>此數值 <dark_red>%VALUE%</dark_red> 不是數字!</red>"
           },
           "repair": {
-            "invalid_type": "<red>The current item does not support repair cost!</red>",
-            "value_success": "<green>Set repair cost to <gold>%VALUE%</gold>!</green>",
-            "invalid_value": "<red>The value <dark_red>%VALUE%</dark_red> is not a valid number!</red>"
+            "invalid_type": "<red>當前物品不支持維修費用!</red>",
+            "value_success": "<green>將維修費用設置為 <gold>%VALUE%</gold>!</green>",
+            "invalid_value": "<red>此數值 <dark_red>%VALUE%</dark_red> 不是數字!</red>"
           },
           "fuel": {
             "value_success": "<green>Set Burn Time to <gold>%VALUE% ticks</gold>!</green>",
-            "invalid_value": "<red>The value <dark_red>%VALUE%</dark_red> is not a valid number!</red>"
+            "invalid_value": "<red>此數值 <dark_red>%VALUE%</dark_red> 不是數字!</red>"
           },
           "custom_model_data": {
-            "disabled": "<red><b>Disabled</b></red>",
-            "success": "<green>Set Model Data to <gold>%VALUE%</gold>!</green>",
-            "invalid_value": "<red>The value <dark_red>%VALUE%</dark_red> is not a valid Model Data number!</red>"
+            "disabled": "<red><b>關閉</b></red>",
+            "success": "<green>將模型數據設置為 <gold>%VALUE%</gold>!</green>",
+            "invalid_value": "<red>此數值 <dark_red>%VALUE%</dark_red> 不是有效的模型數據編號!</red>"
           },
           "consume": {
-            "valid": "<green>Set the durability cost to </green><yellow>%VALUE%</yellow>",
-            "invalid": "<red>This is not a Number! Please type in a Valid number e.g. <yellow>1 </yellow>or<yellow> -1</yellow></red>"
+            "valid": "<green>將耐久性成本設置為 </green><yellow>%VALUE%</yellow>",
+            "invalid": "<red>這不是一個數字! 請輸入有效的數字 例如. <yellow>1 </yellow>or<yellow> -1</yellow></red>"
           }
         },
         "items": {
           "invalid_type": {
-            "name": "<red>Invalid Item</red>",
+            "name": "<red>無效的物品</red>",
             "lore": [
-              "<grey>This Item is not compatible</grey>",
-              "<grey>with this setting!</grey>"
+              "<grey>此項目與此設置不兼容!</grey>"
             ]
           },
           "invalid_version": {
-            "name": "<red>Invalid Minecraft Version</red>",
+            "name": "<red>無效的 Minecraft Version</red>",
             "lore": [
-              "<grey>This feature is not compatible</grey>",
-              "<grey>with this current Minecraft version!</grey>",
-              "<grey>You need at least 1.14 to use this feature!</grey>"
+              "<grey>此功能與當前的 Minecraft 版本不兼容!</grey>",
+              "<grey>您至少需要 1.14 才能使用此功能!</grey>"
             ]
           },
           "page_next": {
-            "name": "<grey>\u23E9</grey>  <gold><b>Next Page</b></gold>"
+            "name": "<grey>\u23E9</grey>  <gold><b>下一頁</b></gold>"
           },
           "page_previous": {
-            "name": "<grey>\u23EA</grey>  <gold><b>Previous Page</b></gold>"
+            "name": "<grey>\u23EA</grey>  <gold><b>上一頁</b></gold>"
           },
           "save_item": {
-            "name": "<grey>\u25B7</grey>  <gold><b>Save Item</b></gold>",
+            "name": "<grey>\u25B7</grey>  <gold><b>保存物品</b></gold>",
             "lore": [
-              "<yellow>Saves the item under the existing folder and key!</yellow>"
+              "<yellow>將項目保存在現有文件夾和密鑰下!</yellow>"
             ]
           },
           "save_item_as": {
-            "name": "<grey>\u270E</grey>  <gold><b>Save As...</b></gold>",
+            "name": "<grey>\u270E</grey>  <gold><b>另存為...</b></gold>",
             "lore": [
-              "<grey>Save the item with a new folder and key.</grey>",
-              "<grey>Input: <yellow><b>folder item_key</b></yellow></grey>",
-              "<red>The folder and key must be lowercase and</red>",
-              "<red>only contain letters, numbers, '_', '-', or '/'!</red>"
+            "<grey>使用新的 key 保存.</grey>",
+            "<grey>輸入: </grey><yellow><b><category_key></b></yellow>",
+            "<red>ID必須是小寫字母數字</red>",
+            "<red>(a-z 0-9 _ -)!</red>"
             ]
           },
           "apply_item": {
-            "name": "<grey>\u25B7</grey>  <green><b>Apply Item</b></green>",
+            "name": "<grey>\u25B7</grey>  <green><b>應用該物品</b></green>",
             "help": [
-              "<yellow>Applies the Item to the recipe</yellow>"
+              "<yellow>將項目應用於配方</yellow>"
             ]
           },
           "reference": {
             "wolfyutilities": {
               "name": "<gold><b>WolfyUtilities</b></gold>",
               "lore": [
-                "<grey>This item was created with WolfyUtilities</grey>",
-                "<grey>and is linked to <yellow>%item_key%</yellow>!</grey>",
-                "<gold>To edit the item use CustomCrafting or the API!</gold>"
+                "<grey>此的物品是用 WolfyUtilities 創建的</grey>",
+                "<grey>並鏈接到 <yellow>%item_key%</yellow>!</grey>",
+                "<gold>要編輯項目,請使用 CustomCrafting 或 API!</gold>"
               ]
             },
             "oraxen": {
               "name": "<gold><b>Oraxen</b></gold>",
               "lore": [
-                "<grey>This item was created with Oraxen</grey>",
-                "<grey>and is linked to <yellow>%item_key%</yellow>!</grey>",
-                "<yellow>To edit the item use Oraxen!</yellow>"
+                "<grey>此的物品是用 Oraxen 創建的</grey>",
+                "<grey>並鏈接到 <yellow>%item_key%</yellow>!</grey>",
+                "<yellow>要編輯項目,請使用 Oraxen!</yellow>"
               ]
             },
             "itemsadder": {
               "name": "<gold><b>ItemsAdder</b></gold>",
               "lore": [
-                "<grey>This item was created with ItemsAdder</grey>",
-                "<grey>and is linked to <yellow>%item_key%</yellow>!</grey>",
-                "<yellow>To edit the item use ItemsAdder!</yellow>"
+                "<grey>此的物品是用 ItemsAdder 創建的</grey>",
+                "<grey>並鏈接到 <yellow>%item_key%</yellow>!</grey>",
+                "<yellow>要編輯項目,請使用 ItemsAdder!</yellow>"
               ]
             },
             "mythicmobs": {
               "name": "<gold><b>MythicMobs</b></gold>",
               "lore": [
-                "<grey>This item was created with MythicMobs</grey>",
-                "<yellow>To edit the item use MythicMobs!</yellow>"
+                "<grey>此的物品是用 MythicMobs 創建的</grey>",
+                "<yellow>要編輯項目,請使用 MythicMobs!</yellow>"
               ]
             }
           },
           "meta_ignore": {
-            "name": "<grey>Mode: <dark_aqua>%VAR%</dark_aqua></grey>",
+            "name": "<grey>模式: <dark_aqua>%VAR%</dark_aqua></grey>",
             "lore": [
-              "<yellow>Change the way this meta is checked!</yellow>",
-              "<grey>Ignore specific meta e.g. DisplayName</grey>",
-              "<grey>Numeric meta can also be configured to</grey>",
-              "<grey>only allow for Higher or Lower values!</grey>"
+              "<yellow>更改此元檢查的方式!</yellow>",
+              "<grey>忽略特定的元數據,例如 顯示名稱</grey>",
+              "<grey>數字元也可以配置為只允許更高或更低的值!</grey>"
             ],
             "help": [
               "<grey>----------------------------------------</grey>",
-              "<dark_aqua>EXACT </dark_aqua><grey>- Meta must be exactly the same!</grey>",
-              "<dark_aqua>IGNORE </dark_aqua><grey>- Meta is ignored and not needed!</grey>",
-              "<grey>For numeric items:</grey>",
-              "<dark_aqua>HIGHER </dark_aqua><grey>- The value can be higher than the set value!</grey>",
-              "<dark_aqua>LOWER </dark_aqua><grey>- The value can be lower than the set value!</grey>"
+              "<dark_aqua>精確的 </dark_aqua><grey>- 元數據必須完全相同!</grey>",
+              "<dark_aqua>忽視 </dark_aqua><grey>- Meta 被忽略且不需要!</grey>",
+              "<grey>對於數字項目:</grey>",
+              "<dark_aqua>更高 </dark_aqua><grey>- 該值可以高於設定值!</grey>",
+              "<dark_aqua>更低 </dark_aqua><grey>- 該值可以低於設定值!</grey>"
             ]
           },
           "display_name": {
